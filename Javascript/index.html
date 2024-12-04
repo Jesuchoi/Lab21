@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>M1 Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function mySum() {
+                var val1 = document.getElementById("val1").value;
+                var val2 = document.getElementById("val2").value;
+                var result = parseFloat(val1) + parseFloat(val2);
+                document.getElementById("result").innerHTML = result;
+            }
+            function mySub() {
+                var val1 = document.getElementById("val1").value;
+                var val2 = document.getElementById("val2").value;
+                var result = parseFloat(val1) - parseFloat(val2);
+                document.getElementById("result").innerHTML = result;
+            }
+            function myMul() {
+                var val1 = document.getElementById("val1").value;
+                var val2 = document.getElementById("val2").value;
+                var result = parseFloat(val1) * parseFloat(val2);
+                document.getElementById("result").innerHTML = result;
+            }
+            function myDiv() {
+                var val1 = document.getElementById("val1").value;
+                var val2 = document.getElementById("val2").value;
+                var result = parseFloat(val1) / parseFloat(val2);
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+        <h1>Very simple simple calculator</h1>
+        <form>
+            Value 1: <input type="text" id="val1"/> <br/>
+            Value 2: <input type="text" id="val2"/> <br/>
+            Result:<span id="result"></span> <br/>
+            <input type="button" value="Sum" onclick="mySum()"/> <br/>
+            <input type="button" value="Subtract" onclick="mySub()"/> <br/>
+            <input type="button" value="Multiply" onclick="myMul()"/> <br/>
+            <input type="button" value="Divide" onclick="myDiv()"/> <br/>
+        </form>
+    </body>
+</html>
